@@ -12,7 +12,7 @@ WaveWander is a free web proxy that will lets you unblock apps games and sites a
 
 
 # Make sure to join our server
-[![Join our Discord](https://img.shields.io/discord/123456789012345678?label=Join%20our%20Discord&logo=discord&logoColor=white&labelColor=7289DA&color=2c2f33)](https://discord.gg/SYJKtdFuaZ)
+[![Join our Discord](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6089c95c-5aff-4e38-9aff-f0a8760d8346/dep8obz-d278fcdd-cb4d-40d0-82ee-62d4a3a3f375.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwODljOTVjLTVhZmYtNGUzOC05YWZmLWYwYTg3NjBkODM0NlwvZGVwOG9iei1kMjc4ZmNkZC1jYjRkLTQwZDAtODJlZS02MmQ0YTNhM2YzNzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GemNU6C1Ph1qnz74ufG4zWQLgxRAgvpHweodre5yyhU)](https://discord.gg/SYJKtdFuaZ)
 
 
 Last thing fork the repo and leave a star that helps us a lot 👍
