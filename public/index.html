@@ -1,119 +1,119 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <link rel="stylesheet" href="/assets/main.css">
-        <style>
-            body {
-                background-color: black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-                overflow: hidden;
-            }
+<head>
+    <link rel="stylesheet" href="/assets/main.css">
+    <style>
+       body {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/71c8d4c1-f1a9-47f1-855c-030b165278fa/dektl6b-3b40000d-d04a-4d92-b767-17b70b19fb22.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcxYzhkNGMxLWYxYTktNDdmMS04NTVjLTAzMGIxNjUyNzhmYVwvZGVrdGw2Yi0zYjQwMDAwZC1kMDRhLTRkOTItYjc2Ny0xN2I3MGIxOWZiMjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sk9f7WGbHKRhgtFKSY4dVx73H2s9WkXdPzWAdEXgGzI');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
 
-            .wrapper {
-                text-align: center;
-                position: relative;
-                z-index: 1;
-            }
+        .wrapper {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
 
-            header {
-                color: white;
-                font-size: 24px;
-            }
+        header {
+            color: white;
+            font-size: 50px;
+            z-index: 2; 
+        }
 
-            .container {
-                position: relative;
-                background-color: black;
-                padding: 40px;
-                border-radius: 50%;
-                box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-            }
+        .container {
+            position: relative;
+            background-color: black;
+            padding: 40px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            z-index: 2; 
+        }
 
-            .form {
-                margin-bottom: 20px;
-            }
+        .form {
+            margin-bottom: 20px;
+        }
 
-            input {
-                padding: 15px;
-                width: 70%;
-                border: none;
-                border-radius: 30px;
-                outline: none;
-            }
+        input {
+            padding: 15px;
+            width: 70%;
+            border: none;
+            border-radius: 30px;
+            outline: none;
+        }
 
-            button {
-                padding: 15px 30px;
-                background-color: black;
-                color: white;
-                border: none;
-                border-radius: 30px;
-                cursor: pointer;
-                font-size: 18px;
-            }
+        button {
+            padding: 15px 30px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+        }
 
-            .logo {
-                max-width: 150px;
-                margin-top: 20px;
-            }
+        .logo {
+            max-width: 150px;
+            margin-top: 20px;
+        }
 
-            .info {
-                color: white;
-            }
+        .info {
+            color: white;
+        }
 
-            .snowflake {
-                position: absolute;
-                background: #fff;
-                border-radius: 50%;
-                width: 8px;
-                height: 8px;
-                opacity: 0.7;
-                animation: snowfall 5s linear infinite;
-            }
+        .page-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            top: 10px; 
+            z-index: 1; 
+        }
 
-            @keyframes snowfall {
-                0% {
-                    transform: translateY(-50vh);
-                }
-                100% {
-                    transform: translateY(100vh);
-                }
-            }
-        </style>
-        <link rel="icon" type="image/x-icon" href="images/Wavelogo.png">
-    </head>
-    <body>
-        <div class="wrapper">
-            <header>
-                <div id="intro">Wa<span>ve</span> Wan<span>der</span></div>
-            </header>
-            <div class="container">
-                <div class="form">
-                    <input placeholder="https://google.com" id="url">
-                    <button id="initiate">Go</button>
-                </div>
-                <div class="info">
-                    
-                </div>
-            </div>
-            <script>
-                
-                function createSnowflake() {
-                    const snowflake = document.createElement("div");
-                    snowflake.className = "snowflake";
-                    snowflake.style.left = `${Math.random() * window.innerWidth}px`;
-                    document.body.appendChild(snowflake);
-                    setTimeout(() => {
-                        snowflake.remove();
-                    }, 5000);
-                }
-
-                // Create snowflakes at regular intervals
-                setInterval(createSnowflake, 1000);
-            </script>
+        .page {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 5px; 
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="images/Wavelogo.png">
+</head>
+  
+  <div class="page-container">
+            <div class="page" onclick="location.href='apps.html';">Apps</div>
+            <div class="page" onclick="location.href='gmes.html';">Games</div>
+            <div class="page" onclick="location.href='settings.html';">Settings</div>
         </div>
-        <script src="/assets/main.js"></script>
-    </body>
+  
+<body>
+    <div class="wrapper">
+        <header>
+            <div id="intro">Wa<span>ve</span> Wan<span>der</span></div>
+        </header>
+        <div class="container">
+            <div class="form">
+                <input placeholder="https://google.com" id="url">
+                <button id="initiate">Go!</button>
+            </div>
+            <div class="info"></div>
+        </div>
+
+
+    </div>
+    <script src="/assets/main.js"></script>
+</body>
 </html>
